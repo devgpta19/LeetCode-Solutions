@@ -27,7 +27,6 @@ class Solution {
                 }
             }
             Collection<Integer> list = map.values();
-            System.out.println(list);
             if(list.contains(-1) || list.contains(-2)){
                 flag = false;
                 continue;
