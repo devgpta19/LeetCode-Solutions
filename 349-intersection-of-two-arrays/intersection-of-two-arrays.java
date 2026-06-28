@@ -12,17 +12,12 @@ class Solution {
             if(set.contains(i))
             resultSet.add(i);
         }
-        // int[] resultArray = new int[resultSet.size()];
-        // int index = 0;
-        // for (Integer value : resultSet) {
-        //     resultArray[index++] = value; 
-        // }
+        int[] resultArray = new int[resultSet.size()];
+        int index = 0;
+        for (Integer value : resultSet) {
+            resultArray[index++] = value; 
+        }
 
-        // return resultArray;
-
-        return resultSet.stream()
-                    .mapToInt(Integer::intValue)
-                    .toArray();
-
+        return resultArray;
     }
 }
